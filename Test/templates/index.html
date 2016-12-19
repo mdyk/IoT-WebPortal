@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona rejestracji urządzenia</title>
+</head>
+<body>
+
+{#<input type="text" />#}
+{#<input type="password" />#}
+
+<form method="POST" action="">{% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type="submit" value="Dodaj urzadzenie" />
+</form>
+</body>
+</html>
